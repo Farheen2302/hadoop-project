@@ -1,0 +1,20 @@
+https://www.google.co.in/search?client=ubuntu&channel=fs&q=Shuffle+Error%3A+Exceeded+MAX_FAILED_UNIQUE_FETCHES%3B+bai&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=iWEnVsGzLs308wew2o7wCw
+
+
+http://vuv90.case.edu:50030/logs/hadoop-hduser-namenode-vuv90.log.2015-06-05
+
+http://vuv90.case.edu:50030/logs/hadoop-hduser-namenode-vuv90.log.2014-12-06
+
+http://vuv95.engineering.cwru.edu:50075/browseDirectory.jsp?dir=%2Fapp%2Fhadoop%2Ftmp%2Fmapred%2Fstaging%2Fhduser%2F.staging&namenodeInfoPort=50070
+
+2015-10-21 15:10:02,966 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+
+Shuffle Error: Exceeded MAX_FAILED_UNIQUE_FETCHES; bailing-out.
+
+
+org.apache.hadoop.security.AccessControlException: Permission denied: user=webuser, access=READ_EXECUTE, inode=".staging":hduser:supergroup:rwx------
+
+
+org.apache.hadoop.security.AccessControlException: Permission denied: user=webuser, access=READ_EXECUTE, inode=".staging":hduser:hadoop:rwx------
+
+org.apache.hadoop.security.AccessControlException: Permission denied: user=webuser, access=READ_EXECUTE, inode="job_201510221613_0001":hduser:hadoop:rwx------

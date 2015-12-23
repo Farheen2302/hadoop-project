@@ -1,0 +1,309 @@
+
+Task Logs: 'attempt_201510211507_0001_r_000000_0'
+
+
+stdout logs
+
+
+
+stderr logs
+
+
+
+syslog logs
+
+2015-10-21 15:09:57,545 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2015-10-21 15:09:57,686 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2015-10-21 15:09:57,743 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2015-10-21 15:09:57,745 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@77ec78b9
+2015-10-21 15:09:57,777 INFO org.apache.hadoop.mapred.ReduceTask: ShuffleRamManager: MemoryLimit=130652568, MaxSingleShuffleLimit=32663142
+2015-10-21 15:09:57,782 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Thread started: Thread for merging on-disk files
+2015-10-21 15:09:57,782 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Thread waiting: Thread for merging on-disk files
+2015-10-21 15:09:57,782 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Need another 3 map output(s) where 0 is already in progress
+2015-10-21 15:09:57,782 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Thread started: Thread for polling Map Completion Events
+2015-10-21 15:09:57,783 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 0 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:09:57,783 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Thread started: Thread for merging in memory files
+2015-10-21 15:10:02,783 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 2 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:10:02,953 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:10:02,966 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:10:02,967 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #1 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:10:02,967 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 12 seconds
+2015-10-21 15:10:03,001 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:10:03,001 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (1 slow hosts and0 dup hosts)
+2015-10-21 15:10:18,008 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:10:18,011 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:10:18,012 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:10:18,012 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #2 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:10:18,012 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 16 seconds
+2015-10-21 15:10:18,012 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:10:38,013 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:10:38,015 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:10:38,015 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:10:38,016 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #3 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:10:38,016 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 21 seconds
+2015-10-21 15:10:38,016 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:10:58,016 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Need another 1 map output(s) where 0 is already in progress
+2015-10-21 15:10:58,017 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 0 outputs (1 slow hosts and0 dup hosts)
+2015-10-21 15:10:58,017 INFO org.apache.hadoop.mapred.ReduceTask: Penalized(slow) Hosts: 
+2015-10-21 15:10:58,017 INFO org.apache.hadoop.mapred.ReduceTask: userhp3-HP-Compaq-8100-Elite-CMT-PC Will be considered after: 1 seconds.
+2015-10-21 15:11:03,017 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:11:03,020 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:11:03,021 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:11:03,021 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #4 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:11:03,021 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 28 seconds
+2015-10-21 15:11:03,021 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:11:33,022 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:11:33,025 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:11:33,026 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:11:33,026 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #5 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:11:33,026 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 37 seconds
+2015-10-21 15:11:33,026 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:11:58,027 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Need another 1 map output(s) where 0 is already in progress
+2015-10-21 15:11:58,027 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 0 outputs (1 slow hosts and0 dup hosts)
+2015-10-21 15:11:58,027 INFO org.apache.hadoop.mapred.ReduceTask: Penalized(slow) Hosts: 
+2015-10-21 15:11:58,027 INFO org.apache.hadoop.mapred.ReduceTask: userhp3-HP-Compaq-8100-Elite-CMT-PC Will be considered after: 12 seconds.
+2015-10-21 15:12:13,028 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:12:13,138 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:12:13,138 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:12:13,139 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #6 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:12:13,139 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 48 seconds
+2015-10-21 15:12:13,139 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:12:58,140 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Need another 1 map output(s) where 0 is already in progress
+2015-10-21 15:12:58,141 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 0 outputs (1 slow hosts and0 dup hosts)
+2015-10-21 15:12:58,141 INFO org.apache.hadoop.mapred.ReduceTask: Penalized(slow) Hosts: 
+2015-10-21 15:12:58,141 INFO org.apache.hadoop.mapred.ReduceTask: userhp3-HP-Compaq-8100-Elite-CMT-PC Will be considered after: 3 seconds.
+2015-10-21 15:13:03,141 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:13:03,144 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:13:03,144 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:13:03,149 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #7 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:13:03,149 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 62 seconds
+2015-10-21 15:13:03,149 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:13:58,151 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Need another 1 map output(s) where 0 is already in progress
+2015-10-21 15:13:58,151 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 0 outputs (1 slow hosts and0 dup hosts)
+2015-10-21 15:13:58,151 INFO org.apache.hadoop.mapred.ReduceTask: Penalized(slow) Hosts: 
+2015-10-21 15:13:58,151 INFO org.apache.hadoop.mapred.ReduceTask: userhp3-HP-Compaq-8100-Elite-CMT-PC Will be considered after: 7 seconds.
+2015-10-21 15:14:08,152 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:14:08,154 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:14:08,155 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:14:08,155 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #8 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:14:08,155 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 81 seconds
+2015-10-21 15:14:08,155 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:14:58,157 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Need another 1 map output(s) where 0 is already in progress
+2015-10-21 15:14:58,157 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 0 outputs (1 slow hosts and0 dup hosts)
+2015-10-21 15:14:58,157 INFO org.apache.hadoop.mapred.ReduceTask: Penalized(slow) Hosts: 
+2015-10-21 15:14:58,157 INFO org.apache.hadoop.mapred.ReduceTask: userhp3-HP-Compaq-8100-Elite-CMT-PC Will be considered after: 31 seconds.
+2015-10-21 15:15:33,158 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:15:33,161 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:15:33,162 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:15:33,162 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #9 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:15:33,162 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 106 seconds
+2015-10-21 15:15:33,162 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+2015-10-21 15:15:58,163 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Need another 1 map output(s) where 0 is already in progress
+2015-10-21 15:15:58,163 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 0 outputs (1 slow hosts and0 dup hosts)
+2015-10-21 15:15:58,163 INFO org.apache.hadoop.mapred.ReduceTask: Penalized(slow) Hosts: 
+2015-10-21 15:15:58,163 INFO org.apache.hadoop.mapred.ReduceTask: userhp3-HP-Compaq-8100-Elite-CMT-PC Will be considered after: 81 seconds.
+2015-10-21 15:16:58,165 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Need another 1 map output(s) where 0 is already in progress
+2015-10-21 15:16:58,165 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 0 outputs (1 slow hosts and0 dup hosts)
+2015-10-21 15:16:58,165 INFO org.apache.hadoop.mapred.ReduceTask: Penalized(slow) Hosts: 
+2015-10-21 15:16:58,165 INFO org.apache.hadoop.mapred.ReduceTask: userhp3-HP-Compaq-8100-Elite-CMT-PC Will be considered after: 21 seconds.
+2015-10-21 15:17:23,166 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2015-10-21 15:17:23,169 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 copy failed: attempt_201510211507_0001_m_000002_0 from userhp3-HP-Compaq-8100-Elite-CMT-PC
+2015-10-21 15:17:23,169 WARN org.apache.hadoop.mapred.ReduceTask: java.net.UnknownHostException: userhp3-HP-Compaq-8100-Elite-CMT-PC
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1168)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1104)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:998)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:932)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getInputStream(ReduceTask.java:1636)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.setupSecureConnection(ReduceTask.java:1593)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1493)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401)
+	at org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333)
+
+2015-10-21 15:17:23,170 INFO org.apache.hadoop.mapred.ReduceTask: Task attempt_201510211507_0001_r_000000_0: Failed fetch #10 from attempt_201510211507_0001_m_000002_0
+2015-10-21 15:17:23,170 INFO org.apache.hadoop.mapred.ReduceTask: Failed to fetch map-output from attempt_201510211507_0001_m_000002_0 even after MAX_FETCH_RETRIES_PER_MAP retries...  or it is a read error,  reporting to the JobTracker
+2015-10-21 15:17:23,170 FATAL org.apache.hadoop.mapred.ReduceTask: Shuffle failed with too many fetch failures and insufficient progress!Killing task attempt_201510211507_0001_r_000000_0.
+2015-10-21 15:17:23,178 WARN org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0 adding host userhp3-HP-Compaq-8100-Elite-CMT-PC to penalty box, next contact in 137 seconds
+2015-10-21 15:17:23,178 INFO org.apache.hadoop.mapred.ReduceTask: attempt_201510211507_0001_r_000000_0: Got 1 map-outputs from previous failures
+
+
+
