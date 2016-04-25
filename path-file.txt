@@ -1,0 +1,3 @@
+bin/hadoop jar MyJar.jar mapreduce/Test_project hdfs://master:54310/user/hduser/input hdfs://master:54310/user/hduser/outputResearch/ hdfs://master:54310/user/hduser/outputResearchFinal/
+
+
